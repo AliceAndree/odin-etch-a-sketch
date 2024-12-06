@@ -44,5 +44,13 @@ function changeSquareAmount() {
   }
 }
 
+function clearGrid() {
+  const gridSquares = document.querySelectorAll(".square");
+  gridSquares.forEach((gridSquare) => {
+    gridSquare.style.backgroundColor = "transparent";
+  });
+}
+
 resetButton.addEventListener("click", changeSquareAmount);
+clearButton.addEventListener("click", clearGrid);
 createSquareGrid(squareAmount);
