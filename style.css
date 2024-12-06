@@ -10,17 +10,29 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-image: linear-gradient(
+      0deg,
+      transparent 5em,
+      rgba(255, 0, 0, 0.2) 0,
+      transparent 5.1em
+    ),
+    linear-gradient(rgba(0, 0, 255, 0.3) 1px, transparent 0);
+  background-size: 100% 2em;
 }
 
 .container {
   width: 1000px;
   height: 700px;
   border-radius: 10px;
-  padding-top: 90px;
+  /* padding-top: 70px; */
   display: flex;
   flex-direction: column;
   align-items: center;
   background: linear-gradient(to right bottom, #c52d28 50%, #a42428 50%);
+}
+
+#logo {
+  margin: 15px 0;
 }
 
 #drawing-zone {
