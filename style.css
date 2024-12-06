@@ -1,0 +1,35 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  margin: 0;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 1000px;
+  height: 700px;
+  padding-top: 90px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(to right bottom, #c52d28 50%, #a42428 50%);
+}
+
+#drawing-zone {
+  width: 800px;
+  height: 450px;
+  border: 6px solid #7c7a7b;
+  border-radius: 30px;
+  background-color: #c5c6c8;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.square:hover {
+  background-color: black;
+}
